@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+import Travel from "./components/Travel";
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+
+        <Travel 
+        destination="Paris"
+        country="France"
+        image="https://static.latribune.fr/full_width/902049/centre-ville.jpg"
+        distance="5000 Kms" />
+
+
+        <Travel 
+        destination="Dublin"
+        country="Irlande"
+        image="https://voyagerenirlande.files.wordpress.com/2012/10/dublin-liffey-00123.jpeg"
+        distance="10 000 Kms" />
+
       </div>
     );
   }
